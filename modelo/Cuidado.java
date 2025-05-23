@@ -1,4 +1,4 @@
-package co.edu.poli.proyecto.modelo;
+package co.edu.poli.proyectoe3.modelo;
 
 import java.io.*;
 
