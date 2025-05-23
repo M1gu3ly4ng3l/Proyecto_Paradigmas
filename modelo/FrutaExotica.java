@@ -1,4 +1,4 @@
-package co.edu.poli.proyecto.modelo;
+package co.edu.poli.proyectoe3.modelo;
 
 import java.io.*;
 
@@ -22,7 +22,7 @@ public class FrutaExotica extends Fruta implements Serializable {
 
     @Override
     public String toString() {
-        return "FrutaExotica{" + "certificada=" + certificada + '}';
+        return super.toString() + ", FrutaExotica{" + "certificada=" + certificada + '}';
     }
 
 }

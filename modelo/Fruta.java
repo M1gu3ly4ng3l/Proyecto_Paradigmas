@@ -1,4 +1,4 @@
-package co.edu.poli.proyecto.modelo;
+package co.edu.poli.proyectoe3.modelo;
 
 import java.io.*;
 
@@ -119,7 +119,17 @@ public abstract class Fruta implements Serializable {
 
     @Override
     public String toString() {
-        return "Fruta{" + "id=" + id + ", nombre=" + nombre + ", variedad=" + variedad + ", descripcion=" + descripcion + ", pesoPromedio=" + pesoPromedio + ", cantidadCosechada=" + cantidadCosechada + ", cuidados=" + cuidados + ", registros=" + registros + ", anioCreacion=" + anioCreacion + '}';
+        return "Fruta{"
+                + "id=" + id
+                + ", nombre='" + nombre + '\''
+                + ", variedad='" + variedad + '\''
+                + ", descripcion='" + descripcion + '\''
+                + ", pesoPromedio=" + pesoPromedio
+                + ", cantidadCosechada=" + cantidadCosechada
+                + ", anioCreacion=" + anioCreacion
+                + ", cuidados=" + java.util.Arrays.toString(cuidados)
+                + ", registros=" + java.util.Arrays.toString(registros)
+                + '}';
     }
 
 }
